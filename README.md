@@ -7,9 +7,8 @@ jena-semcourse
 - Model
 -- TripleStore
 -- FileStore
--- Tagging
--- Search
--- SpringLDAP
+-- JobStore
+-- OntologyRelationStore
 - View
 -- WebApp
 --- AuthenticationView
@@ -23,5 +22,9 @@ jena-semcourse
 -- DocumentController
 -- ProfileController
 -- AdminController
+-- TaggingController
+-- SearchController
+-- LdapController
+-- SchedulerController
 </pre>
 
