@@ -9,7 +9,7 @@ jena-semcourse
 --- java
 ---- webapp
 ----- model
------- FileStore
+------ DocumentStore
 ------ JobStore
 ------ OntologyRelationStore
 ----- controller
