@@ -9,10 +9,11 @@ jena-semcourse
 --- java
 ---- webapp
 ----- model
------- DocumentRepo
------- JobRepo
------- OntologyRelationRepo
------- UserRepo
+------ DocumentRepository
+------ JobRepository
+------ OntologyRelationRepository
+------ User
+------ UserRepository
 ----- controller
 ------ AuthenticationController
 ------ GraphController
