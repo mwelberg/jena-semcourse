@@ -4,27 +4,33 @@ Multiple components (triple store, web application, etc.) are needed to organize
 # Components/Hierarchy
 <pre>
 jena-semcourse
-- Model
--- TripleStore
--- FileStore
--- JobStore
--- OntologyRelationStore
-- View
--- WebApp
---- AuthenticationView
---- OntologyView
---- DocumentView
---- ProfileView
---- AdminView
-- Controller
--- AuthenticationController
--- OntologyController
--- DocumentController
--- ProfileController
--- AdminController
--- TaggingController
--- SearchController
--- LdapController
--- SchedulerController
+- src
+-- main
+--- java
+---- webapp
+----- model
+------ FileStore
+------ JobStore
+------ OntologyRelationStore
+----- controller
+------ AuthenticationController
+------ GraphController
+------ DocumentController
+------ [ProfileController]
+------ AdminController
+------ SearchController
+------ LdapController
+------ [SchedulerController]
+---- jena
+----- model
+------ TripleStore
+----- controller
+------ TaggingController
+--- resources
+---- AuthenticationView
+---- GraphView
+---- DocumentView
+---- [ProfileView]
+---- AdminView
 </pre>
 
