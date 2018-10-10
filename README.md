@@ -9,17 +9,17 @@ jena-semcourse
 --- java
 ---- webapp
 ----- model
------- DocumentStore
------- JobStore
------- OntologyRelationStore
+------ DocumentRepo
+------ JobRepo
+------ OntologyRelationRepo
+------ UserRepo
 ----- controller
 ------ AuthenticationController
 ------ GraphController
 ------ DocumentController
------- [ProfileController]
+------ UploadController
 ------ AdminController
 ------ SearchController
------- LdapController
 ------ [SchedulerController]
 ---- jena
 ----- model
@@ -30,7 +30,7 @@ jena-semcourse
 ---- AuthenticationView
 ---- GraphView
 ---- DocumentView
----- [ProfileView]
+---- UploadView
 ---- AdminView
 </pre>
 
