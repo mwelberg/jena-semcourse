@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head"></head>
+<body>
+<table class="table">
+<thead>
+	<th>Name</th>
+	<th>Admin</th>
+</thead>
+<tbody>
+<tr th:each="user: ${allUsers}">
+    <td th:text="${user.name}" />
+    <td th:text="${user.admin}" />
+</tr>
+</tbody>
+</table>
+</body>
+</html>
